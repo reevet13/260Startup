@@ -5,4 +5,7 @@ Not gonna lie, this stuff is hard to grasp for me.\n
 2. save those changes\n
 3. choose which changes you're willing to fully commit to\n
 4. commit, meaning it saves it\n
-5. push to github, or make it official on the website
+5. push to github, or make it official on the website\n
+
+**AWS Setup**
+This stuff was also hard. Basically it sounds like I have my own personal server space that I'm kind of paying for (mostly free?) and this is where my website physically lives.
