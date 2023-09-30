@@ -23,13 +23,13 @@ I want to create an application that asks quiz questions to determine which Knig
 ### HTML Deliverabel
 For this deliverable I built out the structure of my application using HTML.
 
-HTML pages - Four HTML pages representing the ability to login, take a short quiz (I have one page as an example, there will most likely be 15-30 with the same format), view the result, and the about page.
-Links - The login page automatically links to the quiz, about, and results page. This is in a standard header so is the same on all pages.
-Text - Each option for the quiz is represented by a text description.
-Images - Each quiz page will have a unique picture, and I like the idea of a random one on the about page.
-Login - Input box and submit button for login.
-Database - The Knights Radiant Orders represent data pulled from the database.
-WebSocket - In realtime while taking the quiz user can see results from current participants.
+HTML pages - Four HTML pages representing the ability to login, take a short quiz (I have one page as an example, there will most likely be 15-30 with the same format), view the result, and the about page.  
+Links - The login page automatically links to the quiz, about, and results page. This is in a standard header so is the same on all pages.  
+Text - Each option for the quiz is represented by a text description.  
+Images - Each quiz page will have a unique picture, and I like the idea of a random one on the about page.  
+Login - Input box and submit button for login.  
+Database - The Knights Radiant Orders represent data pulled from the database.  
+WebSocket - In realtime while taking the quiz user can see results from current participants.  
 
 **Rough Imaging**
 ![IMG-2809](https://github.com/reevet13/260startup/assets/144943664/b97be0d7-f09e-48b3-aa6c-a5827cee8c0c)
