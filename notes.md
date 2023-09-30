@@ -1,5 +1,5 @@
-#Notes#
-##Git Practice##
+#Notes
+##Git Practice
 Not gonna lie, this stuff is hard to grasp for me.\n
 1. edit your file\n
 2. save those changes\n
