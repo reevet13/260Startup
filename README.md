@@ -31,6 +31,24 @@ Login - Input box and submit button for login.
 Database - The Knights Radiant Orders represent data pulled from the database.  
 WebSocket - In realtime while taking the quiz user can see results from current participants.  
 
+### CSS Deliverable
+Basically just used bootstrap... wish I had more time to make it my own. Hopefully by the end of the semester I can get more into it.  
+Header, footer, and main content body - Made these clear, separated by a thin line  
+Navigation elements - The links are clear and in the blue everyone knows to click on  
+Responsive to window resizing - Works big or small.  
+Application elements - I like the size of the picture on the quiz, though admittedly the spacing of the answers does need work  
+Application text content - Consistent and simple fonts all around  
+Application images - Images are clear and where they're supposed to be.  
+
+### Javascript Deliverable
+For this deliverable, I implemented javascript for users to login, take the quiz, and see results.  
+Login - after providing a username, users can press the login button and their username is saved in a database for future use. It then redirects user to the first quiz page.  
+Database - Displayed the users username and saves their quiz inputs.
+Websocket - There is space for fellow users names to pop up when we get to that (assuming I understand websocket correctly)  
+Application Logic - Basically the quiz results are saved and result in a Radiant order. I have not completely decided on how I will decide that based on users inputs, but the questions will vary and are currently being saved.
+
+
+
 **Rough Imaging**
 ![IMG-2809](https://github.com/reevet13/260startup/assets/144943664/b97be0d7-f09e-48b3-aa6c-a5827cee8c0c)
 ![IMG-2810](https://github.com/reevet13/260startup/assets/144943664/d2732774-380f-4fc5-a3fc-17bbcce64b21)
