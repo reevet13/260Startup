@@ -1,40 +1,36 @@
 const express = require('express');
-const http = require('http');
-const WebSocket = require('ws');
-const path = require('path');
-
 const app = express();
-const server = http.createServer(app);
-const wss = new WebSocket.Server({ server });
 
-// Serve static files
-app.use(express.static(path.join(__dirname, 'public')));
+const port = process.argv.length > 2 ? process.argv[2] : 3000;
 
-// WebSocket server logic
-wss.on('connection', (socket) => {
-    console.log('WebSocket connection opened');
+app.use(express.json());
+app.use(express.static('public'));
 
-    socket.on('message', (message) => {
-        // Handle incoming messages (quiz results)
-        const quizResults = JSON.parse(message);
-        console.log('Received Quiz Results:', quizResults);
-        // Save the user's answer to a database or perform any desired action
-    });
+const apiRouter = express.Router();
+app.use(`/api`, apiRouter);
 
-    socket.on('close', () => {
-        console.log('WebSocket connection closed');
-    });
+let scores = [];
+
+apiRouter.get('/scores', (_req, res) => {
+  res.send(scores);
 });
 
-// Serve your HTML file
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+apiRouter.post('/score', (req, res) => {
+  const { answer } = req.body;
+
+
+  console.log('Received Answer:', answer);
+
+  scores.push(answer);
+
+  res.send(scores);
 });
 
-// ... (any other routes or middleware you need)
-
-// Start the server
-const PORT = process.env.PORT || 4000;
-server.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+app.use((_req, res) => {
+  res.sendFile('index.html', { root: 'public' });
 });
+
+app.listen(port, () => {
+  console.log(`Listening on port ${port}`);
+});
+
