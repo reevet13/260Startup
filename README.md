@@ -47,6 +47,15 @@ Database - Displayed the users username and saves their quiz inputs.
 Websocket - There is space for fellow users names to pop up when we get to that (assuming I understand websocket correctly)  
 Application Logic - Basically the quiz results are saved and result in a Radiant order. I have not completely decided on how I will decide that based on users inputs, but the questions will vary and are currently being saved.
 
+### Service Deliverable
+For this deliverable I added backend endpoints that receives and returns quiz answers.
+
+Node.js/Express HTTP service - done!
+Static middleware for frontend - done!
+Calls to third party endpoints - copied and pasted baby
+Backend service endpoints - Endpoint for the quiz question answer.
+Frontend calls service endpoints - I did this using the fetch function.
+
 
 
 **Rough Imaging**
