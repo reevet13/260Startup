@@ -50,11 +50,11 @@ Application Logic - Basically the quiz results are saved and result in a Radiant
 ### Service Deliverable
 For this deliverable I added backend endpoints that receives and returns quiz answers.
 
-Node.js/Express HTTP service - done!
-Static middleware for frontend - done!
-Calls to third party endpoints - copied and pasted baby
-Backend service endpoints - Endpoint for the quiz question answer.
-Frontend calls service endpoints - I did this using the fetch function.
+Node.js/Express HTTP service - done!  
+Static middleware for frontend - done!  
+Calls to third party endpoints - copied and pasted baby  
+Backend service endpoints - Endpoint for the quiz question answer.  
+Frontend calls service endpoints - I did this using the fetch function.  
 
 ### DB Deliverable
 For this deliverable I stored the quiz scores in the database  
