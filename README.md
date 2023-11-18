@@ -56,6 +56,12 @@ Calls to third party endpoints - copied and pasted baby
 Backend service endpoints - Endpoint for the quiz question answer.
 Frontend calls service endpoints - I did this using the fetch function.
 
+### DB Deliverable
+For this deliverable I stored the quiz scores in the database  
+MongoDB Atlas database created - done!  
+Endpoints for data - My stubbed out endpoints now process the data and send it to Mongo.  
+Stores data in MongoDB - done!  
+
 
 
 **Rough Imaging**
