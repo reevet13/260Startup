@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const DB = require('./database.js');
 
 const port = process.argv.length > 2 ? process.argv[2] : 3000;
 
@@ -9,21 +10,29 @@ app.use(express.static('public'));
 const apiRouter = express.Router();
 app.use(`/api`, apiRouter);
 
-let scores = [];
-
-apiRouter.get('/scores', (_req, res) => {
-  res.send(scores);
+apiRouter.get('/scores', async (_req, res) => {
+  try {
+    const scores = await DB.getScores();
+    res.send(scores);
+  } catch (error) {
+    console.error('Error fetching scores:', error);
+    res.status(500).send('Internal Server Error');
+  }
 });
 
-apiRouter.post('/score', (req, res) => {
+apiRouter.post('/score', async (req, res) => {
   const { answer } = req.body;
-
 
   console.log('Received Answer:', answer);
 
-  scores.push(answer);
-
-  res.send(scores);
+  try {
+    await DB.insertScore(answer);
+    const scores = await DB.getScores();
+    res.send(scores);
+  } catch (error) {
+    console.error('Error inserting score:', error);
+    res.status(500).send('Internal Server Error');
+  }
 });
 
 app.use((_req, res) => {
@@ -33,4 +42,5 @@ app.use((_req, res) => {
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
+
 
