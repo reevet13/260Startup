@@ -62,6 +62,12 @@ MongoDB Atlas database created - done!
 Endpoints for data - My stubbed out endpoints now process the data and send it to Mongo.  
 Stores data in MongoDB - done!  
 
+### Login Deliverable
+User registration - Creates a new account in the database.
+existing user - Stores the quiz answer under the same user if the user already exists.
+Use MongoDB to store credentials - Stores both user and their score.
+Restricts functionality - You cannot quiz until you're logged in
+
 
 
 **Rough Imaging**
