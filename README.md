@@ -50,11 +50,23 @@ Application Logic - Basically the quiz results are saved and result in a Radiant
 ### Service Deliverable
 For this deliverable I added backend endpoints that receives and returns quiz answers.
 
-Node.js/Express HTTP service - done!
-Static middleware for frontend - done!
-Calls to third party endpoints - copied and pasted baby
-Backend service endpoints - Endpoint for the quiz question answer.
-Frontend calls service endpoints - I did this using the fetch function.
+Node.js/Express HTTP service - done!  
+Static middleware for frontend - done!  
+Calls to third party endpoints - copied and pasted baby  
+Backend service endpoints - Endpoint for the quiz question answer.  
+Frontend calls service endpoints - I did this using the fetch function.  
+
+### DB Deliverable
+For this deliverable I stored the quiz scores in the database  
+MongoDB Atlas database created - done!  
+Endpoints for data - My stubbed out endpoints now process the data and send it to Mongo.  
+Stores data in MongoDB - done!  
+
+### Login Deliverable
+User registration - Creates a new account in the database.
+existing user - Stores the quiz answer under the same user if the user already exists.
+Use MongoDB to store credentials - Stores both user and their score.
+Restricts functionality - You cannot quiz until you're logged in
 
 
 
